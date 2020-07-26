@@ -15,7 +15,8 @@ type DiscoveryClient interface {
 	 * @param instanceHost 服务实例地址
 	 * @param meta 服务实例元数据
 	 */
-	Register(serviceName, instanceId, healthCheckUrl string, instanceHost string, instancePort int, meta map[string]string, logger *log.Logger) bool
+	Register(serviceName, instanceId, healthCheckUrl string, instanceHost string,
+		instancePort int, meta map[string]string, logger *log.Logger) bool
 
 	/**
 	 * 服务注销接口
